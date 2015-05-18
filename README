@@ -1,0 +1,14 @@
+LINKED LIST PROBLEMS
+
+Requires Ruby 1.9+
+
+USAGE:
+
+Problem 1:
+  $ ruby reverse_list.rb
+
+Problem 2:
+  $ ruby reverse_list_mutation.rb
+
+Problem 3:
+  $ ruby cycle_detect.rb 
