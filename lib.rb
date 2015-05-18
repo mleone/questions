@@ -39,6 +39,6 @@ class Stack
   def pop
     popped_node = @data
     @data = popped_node.next_node if popped_node
-    popped_node.value
+    popped_node
   end
 end

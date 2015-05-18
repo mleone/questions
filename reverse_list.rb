@@ -1,5 +1,8 @@
 require_relative 'lib'
 
+# FYI this does seem like a weird implementation because the Stack implementation
+# uses a linked list as the internal data structure, and this piece of code uses
+# both a stack and a linked list (two levels of abstraction)
 def reverse_list(list)
   new_list_stack = Stack.new
 
@@ -8,7 +11,9 @@ def reverse_list(list)
     list = list.next_node
   end
 
-  new_list_stack.data
+  # Once everything is pushed onto the stack just pop the top element
+  # which is a linked list pointing to the rest of the elements.
+  new_list_stack.pop
 end
 
 node1 = LinkedListNode.new(37)

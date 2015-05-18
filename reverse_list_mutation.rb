@@ -1,5 +1,7 @@
 require_relative 'lib'
 
+# For each node, make it point to the previous node, and then run the function
+# again on the following node, with the current node as the previous node.
 def reverse_list_mutation(list, previous=nil)
   next_node = list.next_node
   list.next_node = previous
